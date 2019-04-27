@@ -8,6 +8,6 @@
         Title="Hello WPF" Height="450" Width="800">
     <Grid>
         <TextBlock 
-            x:Name="Hello" Text="Hello WPF" />
+            x:Name="Hello" Text="Hello World" />
     </Grid>
 </Window>
