@@ -15,13 +15,25 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Rectangle Fill="Red" Grid.Row="0"/>
-        <Rectangle Fill="Orange" Grid.Row="1"/>
-        <Rectangle Fill="Yellow" Grid.Row="2"/>
-        <Rectangle Fill="Green" Grid.Row="3"/>
-        <Rectangle Fill="Blue" Grid.Row="4"/>
-        <Rectangle Fill="Indigo" Grid.Row="5"/>
-        <Rectangle Fill="Violet" Grid.Row="6"/>
-        <Rectangle Fill="Black" Grid.Row="7"/>
+        <Rectangle Fill="Red" 
+                   Grid.Row="0"/>
+        <Rectangle Fill="Orange" 
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+        <Rectangle Fill="Yellow" 
+                   Grid.Row="1"/>
+        <Rectangle Fill="Green" 
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+        <Rectangle Fill="Blue" 
+                   Grid.Row="2"/>
+        <Rectangle Fill="Indigo" 
+                   Grid.Row="2"
+                   Grid.Column="1"/>
+        <Rectangle Fill="Violet" 
+                   Grid.Row="3"/>
+        <Rectangle Fill="Black" 
+                   Grid.Row="3"
+                   Grid.Column="1"/>
     </Grid>
 </Window>
