@@ -12,7 +12,7 @@
             <RowDefinition/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -38,6 +38,17 @@
                    Grid.Row="3"/>
         <Rectangle Fill="Black" 
                    Grid.Row="3"
+                   Grid.Column="1"/>
+
+        <Label 
+            Content="Rectangles showing column width"
+            FontSize="24"
+            Grid.Row="4"
+            Grid.ColumnSpan="2"/>
+        <Rectangle Fill="Wheat"
+                   Grid.Row="5"/>
+        <Rectangle Fill="Purple"
+                   Grid.Row="5"
                    Grid.Column="1"/>
     </Grid>
 </Window>
