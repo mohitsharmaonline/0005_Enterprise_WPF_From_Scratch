@@ -26,6 +26,7 @@
                    VerticalAlignment="Bottom"
                    Margin="5"/>
         <TextBox 
+            Name="FullName"
             Grid.Column="1"
             Width="250"
             Height="20"
@@ -45,11 +46,13 @@
             VerticalAlignment="Stretch"
             HorizontalAlignment="Stretch">
             <RadioButton
+                Name="Male"
                 GroupName="Sex"
                 Content="Male"
                 Margin="5"
                 IsChecked="True"/>
             <RadioButton
+                Name="Female"
                 GroupName="Sex"
                 Content="Female"
                 Margin="5"/>
@@ -69,12 +72,15 @@
             VerticalAlignment="Bottom"
             HorizontalAlignment="Left">
             <CheckBox 
+                Name="Desktop"
                 Content="Desktop"
                 Margin="5" />
             <CheckBox 
+                Name="Laptop"
                 Content="Laptop"
                 Margin="5" />
             <CheckBox 
+                Name="Tablet"
                 Content="Table"
                 Margin="5" />
         </StackPanel>
@@ -87,11 +93,13 @@
             Margin="5"/>
 
         <ComboBox
+            Name="Job"
             Grid.Row="3"
             Grid.Column="1"
             HorizontalAlignment="Left"
             VerticalAlignment="Bottom"
-            Margin="5">
+            Margin="5"
+            SelectionChanged="Job_SelectionChanged">
             <ComboBoxItem Content="Programmer"/>
             <ComboBoxItem Content="Designer"/>
             <ComboBoxItem Content="Manager"/>
@@ -107,9 +115,19 @@
             Margin="5"/>
         
         <Calendar 
+            Name="DeliveryDate"
             Grid.Row="4"
             Grid.Column="1"
             Margin="5"
-            HorizontalAlignment="Left"/>
+            HorizontalAlignment="Left"
+            />
+
+        <Button
+            Name="SaveButton"
+            Content="Save"
+            Grid.Row="5"
+            Margin="5"
+            HorizontalAlignment="Right"
+            Click="SaveButton_Click"/>
     </Grid>
 </Window>
