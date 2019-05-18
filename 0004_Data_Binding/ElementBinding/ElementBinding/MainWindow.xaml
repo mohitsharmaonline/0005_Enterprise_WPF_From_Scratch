@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ElementBinding"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <StackPanel Orientation="Horizontal">
+            <Slider Name="mySlider"
+                Minimum="0"
+                Maximum="100"
+                Width="300"/>
+            <TextBlock Margin="5"
+                   Text="{Binding Value, ElementName=mySlider}"/>
+        </StackPanel>        
     </Grid>
 </Window>
