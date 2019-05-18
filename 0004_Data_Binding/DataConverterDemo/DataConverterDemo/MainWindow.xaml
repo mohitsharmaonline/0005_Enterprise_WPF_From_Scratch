@@ -6,7 +6,30 @@
         xmlns:local="clr-namespace:DataConverterDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <local:DateTimeConverter x:Key="DateTimeConverter"/>
+    </Window.Resources>
     <Grid>
-        
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Name: "/>
+                <TextBlock Margin="5,0,0,0" Text="{Binding Name}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Title: "/>
+                <TextBlock Margin="5,0,0,0"
+                           Text="{Binding Title}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                        Margin="0,5,0,0">
+                <TextBlock Text="Start Date" />
+                <TextBlock Margin="5,0,0,0"
+                           Height="50"
+                           Width="200"
+                           Text="{Binding StartDate, Converter={StaticResource DateTimeConverter}}"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
