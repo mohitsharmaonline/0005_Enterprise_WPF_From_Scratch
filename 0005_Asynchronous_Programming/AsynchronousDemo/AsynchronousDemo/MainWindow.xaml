@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel>
+            <Button Content="Click Me"
+                    Width="80"
+                    Height="30"
+                    Click="Button_Click"/>
+            <TextBlock Name="Message"
+                       Text="Ready..."
+                       Margin="10" />
+        </StackPanel>
     </Grid>
 </Window>
