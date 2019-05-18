@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TabControl>
+            <TabItem Header="Tab 1">Hello,  this is in tab 1</TabItem>
+            <TabItem Header="Tab 2">
+                <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Name"/>
+                    <TextBox Width="80" Height="30"/>
+                </StackPanel>
+                <CheckBox Content="I like Tabs"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Tab 3"></TabItem>
+        </TabControl>
     </Grid>
 </Window>
