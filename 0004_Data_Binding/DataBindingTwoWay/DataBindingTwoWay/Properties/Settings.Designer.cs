@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DataBindingOneWay.Properties
+namespace DataBindingTwoWay.Properties
 {
 
 
