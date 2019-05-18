@@ -11,16 +11,24 @@
             Name="Display">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Name: "/>
-                <TextBlock Margin="5,0,0,0"
-                           Text="{Binding Name}"/>
+                <TextBox Margin="5,0,0,0"
+                         Text="{Binding Name, Mode=TwoWay}"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Title: "/>
-                <TextBlock Margin="5,0,0,0"
+                        <TextBox Margin="5,0,0,0"
+                         Text="{Binding Title, Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Name:"/>
+                <TextBlock Margin="5,0,0,0" 
+                           Text="{Binding Name}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Title:"/>
+                <TextBlock Margin="5,0,0,0" 
                            Text="{Binding Title}"/>
             </StackPanel>
-            <Button Content="Change" 
-                    Click="Button_Click"/>
         </StackPanel>
     </Grid>
 </Window>
