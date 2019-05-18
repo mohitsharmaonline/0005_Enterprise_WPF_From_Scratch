@@ -9,6 +9,7 @@
     <Grid>
         <DataGrid Name="dataGrid"
                   AlternatingRowBackground="LightBlue"
-                  AlternationCount="2"/>
+                  AlternationCount="2"
+                  AutoGenerateColumns="False"/>
     </Grid>
 </Window>
