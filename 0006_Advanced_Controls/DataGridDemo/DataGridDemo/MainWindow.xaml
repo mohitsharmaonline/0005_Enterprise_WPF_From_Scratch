@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid Name="dataGrid"/>
+        <DataGrid Name="dataGrid"
+                  AlternatingRowBackground="LightBlue"
+                  AlternationCount="2"/>
     </Grid>
 </Window>
