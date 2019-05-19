@@ -7,6 +7,27 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TreeView>
+            <TreeViewItem Header="Animals">
+                <TreeViewItem Header="Mammals">
+                    <TreeViewItem Header="Dogs">
+                        <TreeViewItem Header="Spaniels"/>
+                        <TreeViewItem Header="Working Dogs"/>
+                        <TreeViewItem Header="Retrievers"/>
+                    </TreeViewItem>
+                    <TreeViewItem Header="Cats">
+                        <TreeViewItem Header="Tiger"/>
+                        <TreeViewItem Header="Leopard"/>
+                        <TreeViewItem Header="Cougar"/>
+                    </TreeViewItem>
+                </TreeViewItem>
+                <TreeViewItem Header="Marsupials">
+                    <TreeViewItem Header="Kangaroo"/>
+                    <TreeViewItem Header="Koala"/>
+                </TreeViewItem>                                
+            </TreeViewItem>
+            <TreeViewItem Header="Plants"/>
+            <TreeViewItem Header="Other"/>
+        </TreeView>
     </Grid>
 </Window>
