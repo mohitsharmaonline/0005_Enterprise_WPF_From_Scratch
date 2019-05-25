@@ -24,5 +24,10 @@ namespace StatusBarDemo
         {
             InitializeComponent();
         }
+
+        private void Help_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("This is a help dialog.");
+        }
     }
 }
