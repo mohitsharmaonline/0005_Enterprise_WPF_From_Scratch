@@ -7,24 +7,31 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Menu>
-            <MenuItem Header="File">
-                <MenuItem Header="New..."/>
-                <MenuItem Header="Open..."/>
-                <Separator/>
-                <MenuItem Header="Add">
-                    <MenuItem Header="New Window"/>
-                    <MenuItem Header="New Project"/>
-                </MenuItem>
-                <Separator/>
-                <MenuItem Header="Save as You Go"
+        <ListBox>
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="File">
+                        <MenuItem Header="New..."/>
+                        <MenuItem Header="Open..."/>
+                        <Separator/>
+                        <MenuItem Header="Add">
+                            <MenuItem Header="New Window"/>
+                            <MenuItem Header="New Project"/>
+                        </MenuItem>
+                        <Separator/>
+                        <MenuItem Header="Save as You Go"
                           IsCheckable="True"/>
-            </MenuItem>
-            <MenuItem Header="Edit">
-                <MenuItem Header="Cut"/>
-                <MenuItem Header="Copy"/>
-                <MenuItem Header="Paste"/>
-            </MenuItem>
-        </Menu>
+                    </MenuItem>
+                    <MenuItem Header="Edit">
+                        <MenuItem Header="Cut"/>
+                        <MenuItem Header="Copy"/>
+                        <MenuItem Header="Paste"/>
+                    </MenuItem>
+                </ContextMenu>
+            </ListBox.ContextMenu>
+            <ListBoxItem Content="Item 1"/>
+            <ListBoxItem Content="Item 2"/>
+            <ListBoxItem Content="Item 3"/>
+        </ListBox>
     </Grid>
 </Window>
