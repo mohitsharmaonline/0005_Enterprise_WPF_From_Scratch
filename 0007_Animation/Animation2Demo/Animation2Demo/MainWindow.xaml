@@ -15,12 +15,20 @@
                 <EventTrigger RoutedEvent="Button.Click">
                     <EventTrigger.Actions>
                         <BeginStoryboard>
-                            <Storyboard TargetProperty="Width">
-                                <DoubleAnimation
-                                    From="30"
-                                    To="150"
-                                    Duration="0:0:4"
-                                    AutoReverse="True"/>
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames
+                                    Storyboard.TargetProperty="Width"
+                                    Duration="0:0:4">
+                                    <LinearDoubleKeyFrame
+                                        Value="30"
+                                        KeyTime="0:0:0"/>
+                                    <LinearDoubleKeyFrame
+                                        Value="40"
+                                        KeyTime="0:0:1"/>
+                                    <LinearDoubleKeyFrame
+                                        Value="200"
+                                        KeyTime="0:0:2"/>
+                                </DoubleAnimationUsingKeyFrames>
                             </Storyboard>
                         </BeginStoryboard>
                     </EventTrigger.Actions>
