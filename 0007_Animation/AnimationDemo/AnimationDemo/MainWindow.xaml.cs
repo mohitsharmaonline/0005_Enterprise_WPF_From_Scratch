@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -23,6 +24,13 @@ namespace AnimationDemo
         public MainWindow()
         {
             InitializeComponent();
+            DoubleAnimation animation = new DoubleAnimation();
+            animation.From = 0;
+            animation.To = 740;
+            animation.Duration = new Duration(TimeSpan.Parse("0:0:5"));
+            animation.AutoReverse = true;
+            animation.RepeatBehavior = new RepeatBehavior(TimeSpan.Parse("0:0:20"));
+            ellipse.BeginAnimation(Canvas.LeftProperty, animation);
         }
     }
 }

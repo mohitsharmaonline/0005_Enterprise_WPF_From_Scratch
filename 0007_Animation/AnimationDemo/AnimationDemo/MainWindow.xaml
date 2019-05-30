@@ -6,7 +6,13 @@
         xmlns:local="clr-namespace:AnimationDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <Canvas>
+        <Ellipse
+            Fill="LightBlue"
+            Width="50"
+            Height="50"
+            Name="ellipse"
+            Canvas.Top="0"
+            Canvas.Left="0"/>
+    </Canvas>
 </Window>
