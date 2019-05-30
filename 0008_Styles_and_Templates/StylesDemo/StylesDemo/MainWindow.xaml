@@ -61,5 +61,13 @@
                  Grid.Column="1"
                  Grid.Row="1"
                  Style="{StaticResource EntryStyle}"/>
+
+        <TextBlock Text="Email: "
+                   Grid.Row="2"
+                   Style="{StaticResource PromptStyle}"/>
+        <TextBox Name="Email"
+                 Grid.Column="1"
+                 Grid.Row="2"
+                 Style="{StaticResource EntryStyle}"/>
     </Grid>
 </Window>
