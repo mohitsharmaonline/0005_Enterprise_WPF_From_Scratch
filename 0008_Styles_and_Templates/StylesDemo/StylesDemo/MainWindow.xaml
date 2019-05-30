@@ -6,6 +6,35 @@
         xmlns:local="clr-namespace:StylesDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="PromptStyle"
+               TargetType="TextBlock">
+            <Setter 
+                Property="FontSize" 
+                Value="24"/>
+            <Setter
+                Property="Margin"
+                Value="5"/>
+            <Setter 
+                Property="FontWeight"
+                Value="Bold"/>
+        </Style>
+
+        <Style 
+            x:Key="EntryStyle"
+            TargetType="TextBox">
+            <Setter Property="HorizontalAlignment"
+                    Value="Left"/>
+            <Setter Property="FontSize"
+                    Value="24"/>
+            <Setter Property="Margin"
+                    Value="5"/>
+            <Setter Property="Width"
+                    Value="80"/>
+            <Setter Property="Height"
+                    Value="40"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -19,29 +48,18 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock Text="First Name: "
-                   Margin="5"
-                   FontSize="24"
-                   FontWeight="Bold"/>
+                   Style="{StaticResource PromptStyle}"/>
+        
         <TextBox Name="FirstName"
                  Grid.Column="1"
-                 HorizontalAlignment="Left"
-                 FontSize="24"
-                 Margin="5"
-                 Width="80"
-                 Height="40"/>
+                 Style="{StaticResource EntryStyle}"/>
 
         <TextBlock Text="Last Name: "
                    Grid.Row="1"
-                   Margin="5"
-                   FontSize="24"
-                   FontWeight="Bold"/>
+                   Style="{StaticResource PromptStyle}"/>
         <TextBox Name="LastName"
                  Grid.Column="1"
                  Grid.Row="1"
-                 HorizontalAlignment="Left"
-                 FontSize="24"
-                 Margin="5"
-                 Width="80"
-                 Height="40"/>
+                 Style="{StaticResource EntryStyle}"/>
     </Grid>
 </Window>
