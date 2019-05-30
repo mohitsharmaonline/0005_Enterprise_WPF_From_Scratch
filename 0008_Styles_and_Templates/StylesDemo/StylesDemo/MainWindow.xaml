@@ -7,6 +7,41 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="First Name: "
+                   Margin="5"
+                   FontSize="24"
+                   FontWeight="Bold"/>
+        <TextBox Name="FirstName"
+                 Grid.Column="1"
+                 HorizontalAlignment="Left"
+                 FontSize="24"
+                 Margin="5"
+                 Width="80"
+                 Height="40"/>
+
+        <TextBlock Text="Last Name: "
+                   Grid.Row="1"
+                   Margin="5"
+                   FontSize="24"
+                   FontWeight="Bold"/>
+        <TextBox Name="LastName"
+                 Grid.Column="1"
+                 Grid.Row="1"
+                 HorizontalAlignment="Left"
+                 FontSize="24"
+                 Margin="5"
+                 Width="80"
+                 Height="40"/>
     </Grid>
 </Window>
