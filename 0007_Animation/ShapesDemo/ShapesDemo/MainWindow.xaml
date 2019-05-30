@@ -31,7 +31,8 @@
               Stroke="Red"
               StrokeThickness="10"/>
 
-        <Polyline
+        <Polygon
+            Fill="Green"
             Points="100,100 200,150 125,175 175,250"
             Stroke="Blue"
             StrokeThickness="5"/>
