@@ -15,5 +15,14 @@
             Canvas.Left="50"
             Stroke="Red"
             StrokeThickness="5"/>
+
+        <Ellipse Width="100"
+                 Height="50"
+                 Fill="Green"
+                 Canvas.Top="50"
+                 Canvas.Left="150"
+                 Stroke="Red"
+                 StrokeThickness="2"/>
+        
     </Canvas>
 </Window>
