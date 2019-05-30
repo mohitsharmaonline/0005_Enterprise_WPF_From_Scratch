@@ -16,7 +16,7 @@
             Stroke="Red"
             StrokeThickness="5"/>
 
-        <Ellipse Width="100"
+        <Ellipse Width="50"
                  Height="50"
                  Fill="Green"
                  Canvas.Top="50"
