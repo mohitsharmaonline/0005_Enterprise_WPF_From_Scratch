@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animation2Demo", "Animation2Demo\Animation2Demo.csproj", "{22770AA1-2418-4C72-B969-49C1A7B3ACDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22770AA1-2418-4C72-B969-49C1A7B3ACDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22770AA1-2418-4C72-B969-49C1A7B3ACDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22770AA1-2418-4C72-B969-49C1A7B3ACDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22770AA1-2418-4C72-B969-49C1A7B3ACDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D28A30B0-CFDA-46D6-8152-94DB42981296}
+	EndGlobalSection
+EndGlobal
