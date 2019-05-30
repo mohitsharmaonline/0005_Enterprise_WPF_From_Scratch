@@ -9,11 +9,11 @@
     <Canvas>
         <Rectangle
             Width="50"
-            Height="100"
+            Height="50"
             Fill="Blue"
             Canvas.Top="50"
             Canvas.Left="50"
-            Stroke="Yellow"
+            Stroke="Red"
             StrokeThickness="5"/>
     </Canvas>
 </Window>
